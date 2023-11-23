@@ -44,7 +44,7 @@
     "build:lib": "npm run test && vite build --mode production && npm run generate:types",
     "clean": "rm -rf ./dist && rm -rf ./live-demo && rm -rf ./coverage",
     "coverage:web": "http-server ./coverage",
-    "generate:types": "tsc -p tsconfig-build.json --declaration --emitDeclarationOnly true --outdir ./dist",
+    "generate:types": "vue-tsc -p tsconfig-build.json --declaration --emitDeclarationOnly true --outdir ./dist",
     "changeset": "changeset",
     "test": "vitest run",
     "test:watch": "vitest",
