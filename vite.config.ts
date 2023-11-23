@@ -1,10 +1,12 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
+import vue from '@vitejs/plugin-vue'
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
   if (mode === 'live-demo') {
     return {
       base: './',
+      plugins: [vue()],
       test: {
         globals: true,
       },
@@ -21,6 +23,7 @@ export default defineConfig(({ mode }) => {
     }
   } else {
     return {
+      plugins: [vue()],
       test: {
         globals: true,
         setupFiles: 'src/setupTests.ts',
@@ -34,8 +37,16 @@ export default defineConfig(({ mode }) => {
       build: {
         lib: {
           entry: resolve(__dirname, 'src/myPackagePlugin', 'index.ts'),
-          name: 'my_package_name',
-          fileName: 'my_package_name',
+          name: 'vue3-component-lib-template',
+          fileName: 'vue3-component-lib-template',
+        },
+      },
+      rollupOptions: {
+        external: ['vue'],
+        output: {
+          globals: {
+            vue: 'Vue',
+          },
         },
       },
     }
