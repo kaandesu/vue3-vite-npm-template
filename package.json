@@ -61,6 +61,7 @@
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
+    "@types/node": "^20.9.4",
     "@vitest/coverage-v8": "^0.34.6",
     "typescript": "^5.2.2",
     "vite": "^5.0.0",
