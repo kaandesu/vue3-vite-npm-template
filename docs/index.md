@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Live Demo
-      link: https://kaandesu.github.io/ts-vite-npm-template/live-demo/index.html
+      link: https://kaandesu.github.io/vue3-component-lib-template/live-demo/index.html
     - theme: alt
       text: Markdown Examples
       link: /markdown-examples
@@ -17,8 +17,8 @@ hero:
       text: API Examples
       link: /api-examples
   image:
-    src: https://raw.githubusercontent.com/kaandesu/ts-vite-npm-template/main/public/logo.webp
-    alt: ts-vite-npm-template
+    src: https://raw.githubusercontent.com/kaandesu/vue3-component-lib-template/main/public/logo.webp
+    alt: vue3-component-lib-template
 
 features:
   - title: Feature A

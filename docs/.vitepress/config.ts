@@ -3,9 +3,9 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'TS npm template',
-  description: 'Vitepress documentation example for ts-vite-npm-template repository',
+  description: 'Vitepress documentation example for vue3-component-lib-template repository',
   lang: 'en-US',
-  base: '/ts-vite-npm-template/',
+  base: '/vue3-component-lib-template/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo.webp',
@@ -24,6 +24,8 @@ export default defineConfig({
       },
     ],
 
-    socialLinks: [{ icon: 'github', link: 'https://github.com/kaandesu/ts-vite-npm-template' }],
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/kaandesu/vue3-component-lib-template' },
+    ],
   },
 })
