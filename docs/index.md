@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: 'TS Vite NPM Template'
+  name: 'Vue Vite NPM Template'
   text: 'Vitepress documentation example'
   tagline: My great package tagline
   actions:
