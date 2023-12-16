@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
-import { resolve } from 'path'
 import vue from '@vitejs/plugin-vue'
+import { resolve } from 'path'
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
   if (mode === 'live-demo') {
@@ -36,16 +36,16 @@ export default defineConfig(({ mode }) => {
       },
       build: {
         lib: {
-          entry: resolve(__dirname, 'src/myPackagePlugin', 'index.ts'),
-          name: 'vue3-vite-npm-template',
+          entry: resolve(__dirname, 'src/myPackagePlugin/index.ts'),
+          name: 'Vue3ViteNpmTemplate',
           fileName: 'vue3-vite-npm-template',
         },
-      },
-      rollupOptions: {
-        external: ['vue'],
-        output: {
-          globals: {
-            vue: 'Vue',
+        rollupOptions: {
+          external: ['vue'],
+          output: {
+            globals: {
+              vue: 'Vue',
+            },
           },
         },
       },

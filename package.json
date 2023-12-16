@@ -4,6 +4,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "description": "Your package description",
+  "private": false,
+  "type": "module",
   "contributors": [
     {
       "name": "Your name",
@@ -36,8 +38,7 @@
     },
     "./style.css": "./dist/style.css"
   },
-  "types": "./dist/index.d.ts",
-  "type": "module",
+  "types": "./dist/index.d.ts",  
   "scripts": {
     "dev": "vite",
     "build": "npm run test && vite build --mode production && npm run generate:types && npm run build:pages",
